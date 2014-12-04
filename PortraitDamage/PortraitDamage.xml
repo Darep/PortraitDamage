@@ -1,0 +1,26 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/..\FrameXML\UI.xsd">
+	<Frame name="PortraitDamage" parent="TargetFrame" toplevel="true" movable="false" frameStrata="HIGH">
+		<Frames>
+			<Frame setAllPoints="true">
+				<Layers>
+					<Layer level="OVERLAY">
+						<FontString name="TargetHitIndicator" hidden="true" inherits="NumberFontNormalHuge">
+							<Anchors>
+								<Anchor point="CENTER" relativeTo="TargetFramePortrait" relativePoint="CENTER">
+									<Offset>
+										<AbsDimension x="0" y="0"/>
+									</Offset>
+								</Anchor>
+							</Anchors>
+						</FontString>
+					</Layer>
+				</Layers>
+			</Frame>
+		</Frames>
+		<Scripts>
+			<OnLoad function="PortraitDamage_OnLoad" />
+			<OnEvent function="PortraitDamage_OnEvent" />
+			<OnUpdate function="PortraitDamage_OnUpdate" />
+		</Scripts>
+	</Frame>
+</Ui>
