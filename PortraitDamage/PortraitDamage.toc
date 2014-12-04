@@ -1,0 +1,9 @@
+## Interface: 60000
+## Title: PortraitDamage
+## Version 1.3
+## Notes: Shows target's combat events (damage, healing) on the target portrait
+## Author: Darep
+## X-Category: Unit Frames
+
+PortraitDamage.lua
+PortraitDamage.xml
